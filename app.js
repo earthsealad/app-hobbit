@@ -36,7 +36,7 @@ io.on('connection', function(socket) {
         language_translator.translate({
             text: msg,
             source: 'en',
-            target: 'fr'
+            target: 'jp'
         }, function(err, translation) {
             if (err) {
                 console.log(err);
