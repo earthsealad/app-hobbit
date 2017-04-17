@@ -36,13 +36,13 @@ io.on('connection', function(socket) {
         language_translator.translate({
             text: msg,
             source: 'en',
-            target: 'jp'
+            target: 'es'
         }, function(err, translation) {
             if (err) {
                 console.log(err);
             } else {
                 console.log(translation);
-                io.emit('P', 'JP: ' + translation.translations[0].translation);
+                io.emit('P', 'ES: ' + translation.translations[0].translation);
             }
         });
     });
