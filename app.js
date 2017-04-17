@@ -42,7 +42,7 @@ io.on('connection', function(socket) {
                 console.log(err);
             } else {
                 console.log(translation);
-                io.emit('P', 'FR: ' + translation.translations[0].translation);
+                io.emit('P', 'JP: ' + translation.translations[0].translation);
             }
         });
     });
